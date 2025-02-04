@@ -14,5 +14,14 @@ datasource db {
 }
 
 model Request {
-  
+    id    Int     @id @default(autoincrement())
+    a     Int
+    b     Int
+    answer Int
+    type   Type
+}
+
+enum Type{
+  ADD
+  MUL
 }
